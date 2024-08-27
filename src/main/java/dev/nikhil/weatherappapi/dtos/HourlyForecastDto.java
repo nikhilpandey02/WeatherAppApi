@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Map;
 
 @Getter
@@ -13,6 +14,7 @@ public class HourlyForecastDto {
     String cod;
     long message;
     int cnt;
+    private List<ForecastDetailsDto> list;
 //    Map<String,Double> list;
 //    Map<String,String>weather;
 

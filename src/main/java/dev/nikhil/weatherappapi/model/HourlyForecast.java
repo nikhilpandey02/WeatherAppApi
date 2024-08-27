@@ -1,15 +1,17 @@
 package dev.nikhil.weatherappapi.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Map;
+import java.util.List;
+
 @Getter
 @Setter
 public class HourlyForecast {
-    String cod;
-    long message;
-    int cnt;
-//    Map<String,Double> list;
-//    Map<String,String>weather;
+    private String cod;
+    private long message;
+    private int cnt;
+    private List<ForecastDetail> list;
 }
+
